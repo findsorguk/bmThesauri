@@ -1,0 +1,52 @@
+http://collection.britishmuseum.org/sparql
+select ?thes (count(*) as ?c)
+{?x a skos:Concept; skos:inScheme ?thes}
+group by ?thes
+
+GLOBAL
+id:person-institution	176461
+id:place	45883
+id:place/type	13
+thes:acquisition	15
+thes:aspect	12
+thes:association	15
+thes:authority	5
+thes:currency	822
+thes:dimension	13
+thes:escape	88
+thes:ethname	3351
+thes:event	7144
+thes:inscription	34
+thes:inscription-subject	26
+thes:language	668
+thes:likelihood	8
+thes:matcult	1483
+thes:material	2044
+thes:nationality	250
+thes:object	5845
+thes:political-state	191
+thes:production	35
+thes:school	482
+thes:script	570
+thes:state	263
+thes:subject	1442
+thes:technique	598
+thes:treatment	719
+thes:unit	2
+thes:ware	666
+
+SEMI-LOCAL
+
+LOCAL
+id:bibliography	7112
+thes:series-type	10694
+thes:department	8
+thes:location	119441
+
+bmPerson-institution-better:
+  176450 person-institution-better.tsv
+  176450 person-institution-1-namesGenderNote.tsv
+  103122 person-institution-2-profession.tsv
+  119024 person-institution-3-nationality.tsv
+   66638 person-institution-4-birth.tsv
+   52680 person-institution-5-death.tsv
